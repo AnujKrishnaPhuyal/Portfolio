@@ -938,3 +938,183 @@ footer {
 
 
 }
+
+@media(min-width:415px) and (max-width:600px) {
+    .nav1 {
+        position: fixed;
+        background-color: rgb(24, 22, 22);
+    }
+
+    .links {
+        /* background-color: black; */
+        position: fixed;
+        margin-top: 268px;
+        width: 100%;
+        /* background-color: rgb(39, 25, 25); */
+        background-color: rgb(24, 22, 22);
+
+        left: -150%;
+        transition: all 0.5s;
+    }
+
+    .links li {
+        padding-left: 29%;
+        display: block;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #check:checked~.links {
+        left: 0%;
+    }
+
+    .Projects {
+        width: 100%;
+        /* background-color: brown; */
+    }
+
+    .Projects h1 {
+        color: royalblue;
+        text-align: center;
+
+        margin: 29px;
+
+    }
+
+    .project_items h1 {
+        color: white;
+        text-align: center;
+        margin: 29px;
+        text-decoration: none;
+
+    }
+
+    .project_items h1 {
+        font-size: 18px;
+    }
+
+    .project_items {
+        display: block;
+        padding-left: 34.5%;
+        width: 80%;
+        justify-content: space-between;
+
+
+    }
+
+    .project_items img {
+        height: 180px;
+        width: 180px;
+        border-radius: 20%;
+
+    }
+
+    .skills {
+        width: 100%;
+        margin-top: 15px;
+
+    }
+
+    .container {
+        display: block;
+
+    }
+
+    .container h1 {
+        color: white;
+
+    }
+
+    .html {
+        display: inline-block;
+
+    }
+
+    .css {
+        display: inline-block;
+
+
+    }
+
+    .python {
+        display: inline-block;
+
+
+    }
+
+    .django {
+        display: inline-block;
+
+
+    }
+
+    .mysql {
+        display: inline-block;
+
+    }
+
+    .ComputerVision {
+        display: inline-block;
+
+    }
+
+
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+
+
+    }
+
+
+
+    .info .img1 {
+        height: 30%;
+        display: block;
+        margin-top: 12%;
+        width: 88%;
+        text-align: center;
+
+    }
+
+    .info .img1 .im {
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .info .personal {
+        width: 100%;
+    }
+
+    .info {
+        margin-left: 0px;
+        padding-left: 1%;
+    }
+
+    .info .personal h1 {
+        padding-left: 2%;
+    }
+
+    .info .p2_class {
+        padding-left: 1%;
+        padding-right: 3%;
+    }
+
+    .info .p2_class .p2 {
+        font-family: 'CustomFont';
+        src: url('custom-font.woff2') format('woff2');
+        font-display: swap;
+        font-stretch: condensed;
+        width: fit-content;
+        padding: 2%;
+    }
+
+
+
+
+
+}
