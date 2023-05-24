@@ -930,7 +930,11 @@ footer {
         font-display: swap;
         font-stretch: condensed;
         width: fit-content;
-        padding: 2%;
+    }
+
+    .info .p2_class {
+        padding-left: 1%;
+        padding-right: 2%;
     }
 
 
