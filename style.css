@@ -59,6 +59,8 @@ nav h1 {
     margin-top: 5px;
     font-weight: bold;
     flex-direction: row;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
 
 
 }
@@ -70,6 +72,8 @@ nav h1 {
 
 .links {
     display: flex;
+    opacity: 0;
+    animation: slideTop 1.1s ease forwards;
 }
 
 .links ul li {
@@ -185,19 +189,34 @@ nav h1 {
 .info .personal h1 {
     color: white;
     margin: 2px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
 }
+
+.info .personal h2 {
+    color: white;
+    margin: 2px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
 
 
 .info .personal p {
     margin-top: 7px;
     font-weight: bold;
     color: white;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+
 
 }
 
 .info .p2_class {
     margin-top: 7px;
     text-align: justify;
+    opacity: 0;
+    animation: slideBottom 0.8s ease forwards;
 }
 
 .info .p2_class p2 {
@@ -205,6 +224,7 @@ nav h1 {
     width: fit-content;
     font-size: 15px;
     font-weight: lighter;
+
 }
 
 .info .personal .one {
@@ -216,28 +236,53 @@ nav h1 {
 
 }
 
+.info .personal h2 span {
+    color: rgb(229, 152, 9);
+
+}
+
 
 .info .personal a {
 
 
-    background: blue;
+    background: black;
     color: white;
     text-decoration: none;
-    margin-top: 19px;
-    padding: 2px;
+    margin-top: 10px;
+    padding: 6px 8px;
     display: inline-block;
-    border-radius: 5px;
-    font-family: bold;
+    border-radius: 10px;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 20px;
-
+    border: 2px solid #fefefe;
+    cursor: pointer;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    opacity: 0;
+    animation: slideTop 0.8s ease forwards;
 }
+
+
 
 .info .personal a:hover {
-    color: rgb(103, 103, 157);
-    transform: scale(.9);
+    color: rgb(179, 179, 182);
+    /* transform: scale(.9); */
+    transform: translateY(-2px);
+    box-shadow: rgba(255, 253, 253, 0.25) 0 8px 15px;
+
+
 
 }
 
+
+.info .personal a:disabled {
+    pointer-events: none;
+
+}
+
+.info .personal a:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
 
 .Projects {
     width: 100%;
@@ -245,7 +290,7 @@ nav h1 {
 }
 
 .Projects h1 {
-    color: royalblue;
+    color: rgb(255, 238, 7);
     text-align: center;
 
     margin: 29px;
@@ -334,7 +379,7 @@ nav h1 {
 }
 
 .skills h1 {
-    color: royalblue;
+    color: rgb(255, 238, 7);
 
 }
 
@@ -636,7 +681,7 @@ footer {
     }
 
     .Projects h1 {
-        color: royalblue;
+        color: rgb(255, 238, 7);
         text-align: center;
 
         margin: 29px;
@@ -801,7 +846,7 @@ footer {
     }
 
     .Projects h1 {
-        color: royalblue;
+        color: rgb(255, 238, 7);
         text-align: center;
 
         margin: 29px;
@@ -980,7 +1025,7 @@ footer {
     }
 
     .Projects h1 {
-        color: royalblue;
+        color: rgb(255, 238, 7);
         text-align: center;
 
         margin: 29px;
@@ -1121,4 +1166,88 @@ footer {
 
 
 
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* CSS */
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #fefefe;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 2px;
+    min-width: 5%;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20%;
+    height: 10%;
+    will-change: transform;
+    scrollbar-width: none;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
