@@ -88,11 +88,15 @@ nav h1 {
     padding: 0%;
 
 }
+.links ul li a:active{
 
+}
 .links ul li a:hover {
 
-    color: rgb(13, 5, 159);
-
+    color: rgb(145, 122, 243);
+    /* transform: scale(.9); */
+    transform: translateY(-2px);
+    box-shadow: rgba(255, 223, 223, 0.25) 0 15px 20px;
 
 }
 
@@ -721,6 +725,7 @@ footer {
         width: 100%;
         margin-top: 15px;
 
+
     }
 
 
@@ -932,6 +937,9 @@ footer {
     }
 
 
+    .ML {
+        display: inline-block;
+    }
 
     .info {
         width: 100%;
@@ -1110,6 +1118,9 @@ footer {
 
     }
 
+    .ML {
+        display: inline-block;
+    }
 
 
     .info {
