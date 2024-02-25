@@ -88,15 +88,11 @@ nav h1 {
     padding: 0%;
 
 }
-.links ul li a:active{
 
-}
 .links ul li a:hover {
 
-    color: rgb(145, 122, 243);
-    /* transform: scale(.9); */
-    transform: translateY(-2px);
-    box-shadow: rgba(255, 223, 223, 0.25) 0 15px 20px;
+    color: rgb(13, 5, 159);
+
 
 }
 
@@ -534,7 +530,6 @@ footer {
     display: flex;
     width: 100%;
     padding: 3px;
-    scrollbar-width: none;
 }
 
 .icons h1 {
@@ -937,9 +932,6 @@ footer {
     }
 
 
-    .ML {
-        display: inline-block;
-    }
 
     .info {
         width: 100%;
@@ -995,6 +987,34 @@ footer {
 
 
 
+}
+
+@media(min-width:412px) and (max-width:919px) {
+
+    .skills {
+        width: 100%;
+        margin-top: 15px;
+        /* border: solid #fefefe; */
+    }
+
+    .container {
+
+        position: relative;
+        justify-content: center;
+        left: 50px;
+    }
+
+    .ML h1 {
+        /* border: solid #fefefe; */
+        margin-right: 90px;
+    }
+
+    .ML img {
+        position: relative;
+        /* border: solid #fefefe; */
+        margin-left: 23%;
+
+    }
 }
 
 @media(min-width:415px) and (max-width:600px) {
@@ -1118,9 +1138,6 @@ footer {
 
     }
 
-    .ML {
-        display: inline-block;
-    }
 
 
     .info {
