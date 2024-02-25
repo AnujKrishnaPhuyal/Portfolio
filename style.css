@@ -530,6 +530,7 @@ footer {
     display: flex;
     width: 100%;
     padding: 3px;
+    scrollbar-width: none;
 }
 
 .icons h1 {
